@@ -18,12 +18,13 @@ const page = () => {
  },[randomNum])
  
  const submitLottery = () => {
-       if(lotteryItem[randomNum] == 'lose'){
-        alert("you lose")
-       }
-       else{
-       alert("You have won " + lotteryItem[randomNum])
-       }
+    //    if(lotteryItem[randomNum] == 'lose'){
+    //     alert("you lose")
+    //    }
+    //    else{
+    //    alert("You have won " + lotteryItem[randomNum])
+    //    }
+    lotteryItem[randomNum] == "lose"? alert("You lose") : alert("You won " + lotteryItem[randomNum])
 
  }
 
