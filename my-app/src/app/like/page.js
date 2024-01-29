@@ -1,5 +1,6 @@
 'use client'
 import React, { useState } from 'react'
+import Link from 'next/link';
 import { GrLike } from "react-icons/gr";
 import { FaRegFaceSurprise } from "react-icons/fa6";
 import { FaRegFaceAngry } from "react-icons/fa6";
@@ -39,7 +40,10 @@ const Reaction = () => {
  <div className='division'>
  {reactionOpen && (<ReactionDiv/>)}
  <GenerateReaction/>
+ <br/> <br/>
+ <Link href="/lottery"> <button> Lottery Game </button> </Link>
  </div>
+ 
  )
 }
  
